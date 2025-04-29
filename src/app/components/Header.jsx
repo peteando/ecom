@@ -14,35 +14,45 @@ export default function Header() {
   };
 
   return (
-    <nav className="w-full h-24 flex flex-col justify-center items-center sticky top-0 z-50 bg-white">
+    <nav className="w-full h-24 flex flex-col justify-center items-center sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto lg:px-3 w-full">
         <div className="lg:w-full w-11/12 mx-auto h-full flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/">
-              <Image src="/images/P.svg" alt="Logo" width={48} height={48} />
-            </Link>
+            
+            <span className="text-4xl font-bold text-purple-900 ml-4">Tradies</span>
+            <span className="text-4xl font-bold text-pink-500"> Lending</span>
           </div>
 
           <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden">
             <li>
-              <Link href="/" className="leading-normal no-underline text-black font-bold text-lg hover:text-black">
+              <Link href="/" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#" className="leading-normal no-underline text-black font-bold text-lg hover:text-black">
-                About
+              <Link href="#" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+                How it works
               </Link>
             </li>
             <li>
-              <Link href="#" className="leading-normal no-underline text-black font-bold text-lg hover:text-black">
-                Work
+              <Link href="#" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+                Loan Types
               </Link>
             </li>
             <li>
-              <Link href="/store/products" className="leading-normal no-underline text-black font-bold text-lg hover:text-black">
-                Contact
+              <Link href="/store/products" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+               Why Trust Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/store/products" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+                Success Stories
+              </Link>
+            </li>
+            <li>
+              <Link href="/store/products" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+                FAQ
               </Link>
             </li>
           </ul>

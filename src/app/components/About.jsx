@@ -1,32 +1,40 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-
-
-const BestSellers = () => {
+export default function About() {
     return (
-        <div>
-            <div className="container mx-auto px-3">
-                <div>
-                    <h2 className="text-3xl lg:text-4xl font-bold mt-20 mb-10 text-center">About Me</h2>
-                     <p className="mb-20">Hello, my name is Peter and I'm a web developer who is just starting out in
-                          the industry. I'm passionate about creating beautiful and functional websites
-                           that solve problems for businesses and individuals. I'm a quick learner and
-                            constantly expanding my skill set to stay up-to-date with the latest web development
-                             trends and technologies. My experience includes coding in HTML, CSS, and JavaScript,
-                              as well as using frameworks like Bootstrap and jQuery to create responsive and dynamic web pages. 
-                              I believe that good communication and collaboration are essential for successful web development projects. 
-                              I enjoy working with clients to understand their needs and goals, and then using my technical 
-                              expertise to bring their vision to life. When I'm not coding, you can find me exploring 
-                              new coffee shops, playing guitar and video games. I'm excited to continue growing as a 
-                              web developer and look forward to working on new projects and collaborating with other professionals in the field.</p>
-                    </div>
-                </div>
+      <section className="bg-white py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-bold text-blue-800 mb-4">About Us</h2>
+            <p className="text-gray-600 text-lg">
+              Trusted Local Plumbers Servicing Melbourne and Surrounds
+            </p>
+          </div>
+  
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl font-semibold text-blue-700 mb-4">
+                Over 20 Years of Experience
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                At <span className="font-semibold text-blue-800">Swift Plumbing</span>, we’re proud to be a family-owned business delivering
+                reliable plumbing solutions across Melbourne. Whether it’s a leaky tap or a full
+                bathroom renovation, our licensed plumbers get the job done right the first time.
+              </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                We’re known for our honest advice, affordable pricing, and high-quality workmanship.
+                No job is too big or too small – we treat every customer like family.
+              </p>
             </div>
-        
-    )
-}
-
-export default BestSellers
-
-
+  
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img
+                src="/images/plumber2.png"
+                alt="Plumber working on a pipe"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+  

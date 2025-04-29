@@ -1,105 +1,26 @@
-import {
-    FaArrowAltCircleUp,
-    FaFacebook,
-    FaInstagram,
-    FaYoutube,
-  } from "react-icons/fa";
-  
-  export default function Footer() {
-    return (
-      <footer>
-        <div className="bg-white">
-          <div className="container mx-auto grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-8 px-3  border-t border-solid py-16">
-            <div>
-            <h2 className="text-primary font-bold text-4xl">Shop<span className="text-black">it</span></h2>
-              <p className="text-gray py-4 text-lg pb-4">
-                30 Great Peter St, WestMinister, London SWIP 28J, United Kingdom
-              </p>
-              <span className="flex items-center gap-4">
-                <FaFacebook
-                  size={24}
-                  className="text-primary hover:text-primary cursor-pointer"
-                />
-                <FaInstagram
-                  size={24}
-                  className="text-primary hover:text-primary cursor-pointer"
-                />
-                <FaYoutube
-                  size={24}
-                  className="text-primary hover:text-primary cursor-pointer"
-                />
-              </span>
-            </div>
-            <div>
-              <h5 className="font-semibold text-2xl pb-8">About</h5>
-              <ul>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  About us
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Features
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  News
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Plans
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-semibold text-2xl pb-8">Company</h5>
-              <ul>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Why Shopit
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Partner with us
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  FAQ
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Blog
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-semibold text-2xl pb-8">Support</h5>
-              <ul>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Account
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Support center
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Feedback
-                </li>
-                <li className="hover:text-primary text-lg leading-10 cursor-pointer">
-                  Contact us
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-semibold text-2xl pb-8">Newsletter</h5>
-              <p className="text-gray py-4 text-lg pb-4">
-                Subscribe to our Newsletter and get exciting offers
-              </p>
-              <div className="h-14 flex items-center relative">
-                <input
-                  type="text"
-                  placeholder="Enter your email address"
-                  className="bg-white outline-none w-full h-full shadow px-4"
-                />
-                <button className="bg-primary text-white rounded-full absolute right-2 w-10 h-10">
-                  <FaArrowAltCircleUp className="w-full h-full" />
-                </button>
-              </div>
-            </div>
-          </div>
+import React from 'react';
+
+export default function Footer() {
+  return (
+    <footer className="bg-black text-gray-300 py-8">
+      <div className="container mx-auto px-4 text-center">
+        <p className="mb-4 text-sm">
+          © {new Date().getFullYear()} Tradies Lending. All rights reserved.
+        </p>
+
+        <div className="flex justify-center space-x-6 text-sm">
+          <a href="#how" className="hover:underline">How It Works</a>
+          <a href="#loan-types" className="hover:underline">Loan Types</a>
+          <a href="#trust" className="hover:underline">Why Trust Us</a>
+          <a href="#success-stories" className="hover:underline">Success Stories</a>
+          <a href="#faq" className="hover:underline">FAQ</a>
+          <a href="#contact" className="hover:underline font-semibold text-white">Get a Free Quote</a>
         </div>
-      </footer>
-    );
-  }
-  
+
+        <p className="mt-6 text-xs text-gray-400">
+          ABN 12 345 678 910 | Australian Credit License Number 123456
+        </p>
+      </div>
+    </footer>
+  );
+}

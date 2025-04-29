@@ -24,7 +24,7 @@ const Contact = () => {
     }
 
     return (
-        <section className="bg-[#266f6b] text-white pt-20 pb-10">
+        <section className="bg-purple-900 text-white pt-20 pb-10">
             <div className="container mx-auto px-3">
                 <h2 className="text-4xl lg:text-4xl font-bold mb-10 text-center">Contact Me</h2>
 
