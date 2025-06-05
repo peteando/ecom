@@ -19,39 +19,44 @@ export default function Header() {
         <div className="lg:w-full w-11/12 mx-auto h-full flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
+          <img
+    src="/images/bolt.svg"
+    alt="Sparkies Logo"
+    className="w-16 h-16 "
+  />
             
-            <span className="text-4xl font-bold text-purple-900 ml-4">Tradies</span>
-            <span className="text-4xl font-bold text-pink-500"> Lending</span>
+            <span className="text-4xl font-bold text-[#d4040a] ml-4">Sparkies</span>
+            <span className="text-4xl font-bold "> Loans</span>
           </div>
 
           <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden">
             <li>
-              <Link href="/" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+              <Link href="/" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+              <Link href="#" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
                 How it works
               </Link>
             </li>
             <li>
-              <Link href="#" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+              <Link href="#" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
                 Loan Types
               </Link>
             </li>
             <li>
-              <Link href="/store/products" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+              <Link href="/store/products" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
                Why Trust Us
               </Link>
             </li>
             <li>
-              <Link href="/store/products" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+              <Link href="/store/products" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
                 Success Stories
               </Link>
             </li>
             <li>
-              <Link href="/store/products" className="leading-normal no-underline text-violet-950  text-lg hover:text-black">
+              <Link href="/store/products" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
                 FAQ
               </Link>
             </li>

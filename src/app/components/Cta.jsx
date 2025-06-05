@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Cta() {
   return (
-    <section className="py-16 bg-violet-900">
+    <section className="py-16 bg-[#d4040a]">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-6 text-white">Ready to Get Started?</h2>
         <p className="text-lg text-violet-100 mb-8">

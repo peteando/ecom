@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Trust() {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-cyan-950">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-10 text-violet-900">Why Tradies Trust Us</h2>
+        <h2 className="text-4xl font-bold mb-10 text-white">Why Sparkies Trust Us</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Trust Point 1 */}

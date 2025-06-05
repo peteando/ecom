@@ -1,35 +1,40 @@
 import React from 'react';
 
 export default function SuccessStories() {
+  const stories = [
+    {
+      quote: "I got my ute funded in two days. No headaches, no paperwork nightmares!",
+      name: "Dan",
+      role: "Electrician from Wagga Wagga",
+    },
+    {
+      quote: "They understood my situation as a new ABN holder. Got me approved when others said no.",
+      name: "Rita",
+      role: "Solo Sparkie from Brisbane",
+    },
+    {
+      quote: "Fast, friendly, and professional. I’ve already recommended them to three mates.",
+      name: "Tony",
+      role: "Commercial Electrician from Geelong",
+    },
+  ];
+
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-10 text-violet-900">Success Stories</h2>
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <h2 className="text-4xl font-bold  mb-4">Real Sparkies. Real Results.</h2>
+        <p className="text-gray-600 mb-12">
+          Electricians across Australia are growing their businesses with our help. Here's what they say:
+        </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Story 1 */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-            <p className="text-gray-700 mb-4">
-              "Got my new ute financed fast — made it so much easier to get to jobs and grow the business."
-            </p>
-            <h3 className="text-xl font-semibold text-violet-700">Dave, Plumber - Geelong</h3>
-          </div>
-
-          {/* Story 2 */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-            <p className="text-gray-700 mb-4">
-              "Upgraded my tools and trailer thanks to their help — smooth process, no dramas."
-            </p>
-            <h3 className="text-xl font-semibold text-violet-700">Jess, Electrician - Bendigo</h3>
-          </div>
-
-          {/* Story 3 */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-            <p className="text-gray-700 mb-4">
-              "Needed a new van for bigger jobs — quick approval and they actually understood what tradies need."
-            </p>
-            <h3 className="text-xl font-semibold text-violet-700">Mick, Carpenter - Ballarat</h3>
-          </div>
+          {stories.map((story, idx) => (
+            <div key={idx} className="bg-gray-50 p-6 rounded-xl shadow-md text-left">
+              <p className="text-gray-800 italic mb-4">"{story.quote}"</p>
+              <h3 className="text-lg font-semibold ">{story.name}</h3>
+              <p className="text-sm text-gray-500">{story.role}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

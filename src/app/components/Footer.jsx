@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-black text-gray-300 py-8">
       <div className="container mx-auto px-4 text-center">
         <p className="mb-4 text-sm">
-          © {new Date().getFullYear()} Tradies Lending. All rights reserved.
+          © {new Date().getFullYear()} Sparkies Loans. All rights reserved.
         </p>
 
         <div className="flex justify-center space-x-6 text-sm">
