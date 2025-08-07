@@ -8,7 +8,7 @@ function Hero() {
         <div className="flex flex-col md:flex-row items-center md:items-start">
           
           {/* Left Column */}
-          <div className="md:w-1/2 text-left mb-10 md:mb-0">
+          <div className="md:w-1/2 text-left pr-10 mb-10 md:mb-0">
             <h1 className="text-6xl font-bold text-white mt-40 leading-tight">
               Power Your Business With The Right Loan
             </h1>
@@ -19,12 +19,12 @@ function Hero() {
               href="#contact"
               className="inline-block mt-6 bg-[#d4040a] hover:bg-[#cc0000] text-white font-semibold py-3 px-6 rounded shadow-md transition"
             >
-              Request a Free Quote
+              Apply Now
             </a>
           </div>
 
           {/* Right Column: Image */}
-          <div className="md:w-1/2 flex justify-center">
+          <div className="md:w-1/2 pl-10 flex justify-center">
           <img src="/images/globe.svg" alt="Description of image" />
           </div>
         </div>

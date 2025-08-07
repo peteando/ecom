@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { LuHammer, LuTruck, LuDollarSign, LuUser, LuBriefcase } from 'react-icons/lu';
 
 export default function LoanTypes() {
@@ -10,26 +11,31 @@ export default function LoanTypes() {
       title: "Tool & Equipment Loans",
       description: "Get the gear you need to do the job right — from power drills to testing kits.",
       icon: <div className={iconWrapper}><LuHammer className={iconClass} /></div>,
+      link: "/loan-form/tools",
     },
     {
       title: "Vehicle & Ute Finance",
       description: "Finance your next work ute or van with low-doc options and fast approvals.",
       icon: <div className={iconWrapper}><LuTruck className={iconClass} /></div>,
+      link: "/loan-form/vehicles",
     },
     {
       title: "Business Cash Flow Loans",
       description: "Stay ahead of bills, wages, and supplier payments when cash is tight.",
       icon: <div className={iconWrapper}><LuDollarSign className={iconClass} /></div>,
+      link: "/loan-form/cashflow",
     },
     {
       title: "Personal Loans for Tradies",
       description: "Need funds for something outside the job? We’ve got you covered there too.",
       icon: <div className={iconWrapper}><LuUser className={iconClass} /></div>,
+      link: "/loan-form/personal",
     },
     {
       title: "Start-Up & ABN Loans",
       description: "Just got your ABN? No problem — we work with new sparkies too.",
       icon: <div className={iconWrapper}><LuBriefcase className={iconClass} /></div>,
+       link: "/loan-form/startup",
     },
   ];
 
@@ -42,14 +48,16 @@ export default function LoanTypes() {
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {loans.map((loan, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-xl shadow-md text-left">
-              {loan.icon}
-              <h3 className="text-xl font-semibold  mb-2">{loan.title}</h3>
-              <p className="text-gray-700">{loan.description}</p>
-            </div>
-          ))}
-        </div>
+  {loans.map((loan, idx) => (
+    <Link key={idx} href={loan.link} className="block">
+      <div className="bg-white p-6 rounded-xl shadow-md text-left hover:shadow-lg transition">
+        {loan.icon}
+        <h3 className="text-xl font-semibold mb-2">{loan.title}</h3>
+        <p className="text-gray-700">{loan.description}</p>
+      </div>
+    </Link>
+  ))}
+</div>
       </div>
     </section>
   );

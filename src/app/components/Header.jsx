@@ -25,7 +25,7 @@ export default function Header() {
     className="w-16 h-16 "
   />
             
-            <span className="text-4xl font-bold text-[#d4040a] ml-4">Sparkies</span>
+            <span className="text-4xl font-bold text-[#d4040a] ml-2">Sparkies</span>
             <span className="text-4xl font-bold "> Loans</span>
           </div>
 
@@ -43,6 +43,11 @@ export default function Header() {
             <li>
               <Link href="#" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
                 Loan Types
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="leading-normal no-underline text-cyan-950  text-lg hover:text-black">
+                Get Loan Ready
               </Link>
             </li>
             <li>

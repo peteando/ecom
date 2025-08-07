@@ -8,6 +8,8 @@ import SuccessStories from './components/SuccessStories.jsx';
 import Faq from './components/Faq.jsx';
 import Cta from './components/Cta.jsx';
 import LeadCapture from './components/LeadCapture.jsx';
+import MultiStepForm from './components/MultiStepForm.jsx';
+import GetLoanReady from './components/GetLoanReady.jsx';
 
 
 
@@ -17,10 +19,12 @@ const HomePage = () => {
       <Hero />
       <How/>
       <LoanTypes/>
+      <GetLoanReady/>
       <Trust/>
       <SuccessStories/>
       <Faq/>
       <Cta/>
+      <MultiStepForm/>
       <LeadCapture/>
       
       {/* Add more sections as needed */}
