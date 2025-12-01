@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.32.0",
     "@supabase/supabase-js": "^2.48.1",
-    "next": "15.1.7",
+    "cloudinary": "^2.7.0",
+    "formidable": "^3.5.4",
+    "formidable-serverless": "^1.1.1",
+    "mongoose": "^8.18.0",
+    "next": "^15.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",

@@ -1,15 +1,12 @@
 // app/page.js
 import React from 'react';
-import Hero from '../app/components/Hero.jsx'
-import How from './components/How';
-import LoanTypes from './components/LoanTypes.jsx';
-import Trust from './components/Trust.jsx';
-import SuccessStories from './components/SuccessStories.jsx';
-import Faq from './components/Faq.jsx';
-import Cta from './components/Cta.jsx';
-import LeadCapture from './components/LeadCapture.jsx';
-import MultiStepForm from './components/MultiStepForm.jsx';
-import GetLoanReady from './components/GetLoanReady.jsx';
+import Hero from '../components/Hero.jsx';
+import Categories from '../components/Categories.jsx';
+
+import BestSellers from '../components/Bestsellers.jsx';
+import BestSellers2 from '@/components/Bestsellers2.jsx';
+import Brands from '../components/Brands.jsx';
+
 
 
 
@@ -17,15 +14,12 @@ const HomePage = () => {
   return (
     <div>
       <Hero />
-      <How/>
-      <LoanTypes/>
-      <GetLoanReady/>
-      <Trust/>
-      <SuccessStories/>
-      <Faq/>
-      <Cta/>
-      <MultiStepForm/>
-      <LeadCapture/>
+      <Categories/>
+      
+      <BestSellers/>
+      <BestSellers2/>
+      <Brands/>
+      
       
       {/* Add more sections as needed */}
     </div>
